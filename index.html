@@ -12,44 +12,62 @@
 
 <body>
   <header class="site-header">
-    <h1>Welcome! I am Patrick Feeney</h1>
+    <h1>I am Patrick Feeney</h1>
     <nav class="social-links">
-      <a href="https://github.com/patrickfeeney03?tab=repositories" target="_blank">GitHub</a>
+      <a href="https://github.com/patrickfeeney03?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="mailto:patrickfeeneytamayo@gmail.com">patrickfeeneytamayo@gmail.com</a>      
     </nav>
   </header>
 
   <main>
     <section>
-      <p>
-        I am a Sofware Engineer. I currently work in media signaling for WebRTC communications. I mainly deal with
-        Java microservices on the backend side of things. Familiar with Spring Boot and everything that comes with that.
-      </p>
-      <p>
-        I have dealt with AWS a fair bit too, by deploying branches to test features and to debug code in real-life
-        scenarios.
-      </p>
-      <p>
-        To prevent bugs from occurring I always make sure to write enough tests. I have written so many tests, unit
-        tests, integration tests, end to end tests...JUnit and Mockito are my go-tos.
-      </p>
-      <p>
-        I also have some experience with CICD tools like Jenkins. </p>
-      <p>
-        Even though I don't do much front end development I enjoy using React. I used to kind of hate JavaScript but as
-        time passes I've started to fall in love with it. Though why does everything need to be a friggin promise am I
-        right.
-      </p>
-      <p>
-        I would attach my cv but it seems to always be out of date.
-      </p>
+        <ul>
+          <li>
+            Work at Genesys;
+          </li>
+          <li>
+            Studied Software and Electronic Engineering;
+          </li>
+          <li>
+            Work on Angular frontends for WebRTC applications;
+          </li>
+          <li>
+            Work with real time data. WebSockets, WebRTC, Kafka;
+          </li>
+          <li>
+            Work with Java Spring microservice backends. WebRTC signaling (how to get people to talk to each other on a call);
+          </li>
+          <li>
+            Work on our own client-side WebbRTC libraries. <a href="https://github.com/purecloudlabs/genesys-cloud-streaming-client" target="_blank" rel="noopener noreferrer">streaming-client</a> <a href="https://github.com/MyPureCloud/genesys-cloud-webrtc-sdk" target="_blank" rel="noopener noreferrer">webrtc-sdk</a>;
+          </li>
+          <li>
+            Work with the AWS ecosystem;
+          </li>
+        </ul>
+        <br>
+        <hr style="border: solid 1px grey;">
+        <br>
+        <ul>
+          <li>
+            I like hosting stuff on VPSs. Recently, I decided to ditch Docker and use systemd services and cron jobs. I've recently been (re) learning C++. Made a 'game' with Raylib. I decided to try PHP? and pairing it with SQLITE to get shit done.
+          </li>
+          <li>
+            I only use VSCode to view JSON.
+          </li>
+          <li>
+            I like lifting weights and riding my bike in the city.
+          </li>
+        </ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>2025 Patrick Feeney</p>
+    <p><span id="year"></span> Patrick Feeney</p>
   </footer>
 
 </body>
-
+<script>
+  const yearElem = document.getElementById("year");
+  yearElem.textContent = new Date().getFullYear();
+</script>
 </html>
