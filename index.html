@@ -1,78 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Patrick Feeney Fullstack Frontend Backend Software Engineer working in WebRTC, Java microservices, AWS, Angular and React.">
-  <title>Patrick Feeney</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <h1>I am Patrick (Santiago) Feeney</h1>
-    <nav class="social-links">
-      <a href="https://github.com/patrickfeeney03?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="mailto:patrickfeeneytamayo@gmail.com">patrickfeeneytamayo@gmail.com</a>      
-    </nav>
-  </header>
-
-  <main>
-    <section>
-        <ul>
-          <li>
-            Work at Genesys;
-          </li>
-          <li>
-            Studied Software and Electronic Engineering;
-          </li>
-          <li>
-            Work on Angular frontends for WebRTC applications;
-          </li>
-          <li>
-            Work with real time data. WebSockets, WebRTC, Kafka;
-          </li>
-          <li>
-            Work with Java Spring microservice backends. WebRTC signaling (how to get people to talk to each other on a call);
-          </li>
-          <li>
-            Work on our own client-side WebRTC libraries. 
-            <a href="https://github.com/purecloudlabs/genesys-cloud-streaming-client" target="_blank" rel="noopener noreferrer" class="social-links">
-              streaming-client
-            </a>
-            <a href="https://github.com/MyPureCloud/genesys-cloud-webrtc-sdk" target="_blank" rel="noopener noreferrer" class="social-links">
-              webrtc-sdk</a>;
-          </li>
-          <li>
-            Work with the AWS ecosystem;
-          </li>
-        </ul>
-        <br>
-        <hr style="border: solid 1px grey;">
-        <br>
-        <ul>
-          <li>
-            I like hosting stuff on VPSs. Recently, I decided to ditch Docker and use systemd services and cron jobs. I've recently been (re) learning C++. Made a 'game' with Raylib. I decided to try PHP? and pairing it with SQLITE to get shit done.
-          </li>
-          <li>
-            I only use VSCode to view JSON.
-          </li>
-          <li>
-            I like lifting weights and riding my bike in the city.
-          </li>
-        </ul>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p><span id="year"></span> Patrick Feeney</p>
-  </footer>
-
-  <script>
-    const yearElem = document.getElementById("year");
-    yearElem.textContent = new Date().getFullYear();
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patrick Feeney Fullstack Frontend Backend Software Engineer working in WebRTC, Java microservices, AWS, Angular and React.">
+    <title>Patrick Feeney</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

@@ -1,0 +1,43 @@
+<script setup lang="ts">
+const currentYear = new Date().getFullYear()
+</script>
+
+<template>
+  <header class="site-header">
+    <h1>I am Patrick (Santiago) Feeney</h1>
+    <nav class="social-links" aria-label="Contact links">
+      <a href="https://github.com/patrickfeeney03?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:patrickfeeneytamayo@gmail.com">patrickfeeneytamayo@gmail.com</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <ul>
+        <li>Work at Genesys;</li>
+        <li>Studied Software and Electronic Engineering;</li>
+        <li>Work on Angular frontends for WebRTC applications;</li>
+        <li>Work with real time data. WebSockets, WebRTC, Kafka;</li>
+        <li>Work with Java Spring microservice backends. WebRTC signaling (how to get people to talk to each other on a call);</li>
+        <li>
+          Work on our own client-side WebRTC libraries.
+          <a href="https://github.com/purecloudlabs/genesys-cloud-streaming-client" target="_blank" rel="noopener noreferrer">streaming-client</a>,
+          <a href="https://github.com/MyPureCloud/genesys-cloud-webrtc-sdk" target="_blank" rel="noopener noreferrer">webrtc-sdk</a>;
+        </li>
+        <li>Work with the AWS ecosystem;</li>
+      </ul>
+
+      <hr />
+
+      <ul>
+        <li>I like hosting stuff on VPSs. Recently, I decided to ditch Docker and use systemd services and cron jobs. I've recently been (re) learning C++. Made a 'game' with Raylib. I decided to try PHP? and pairing it with SQLITE to get shit done.</li>
+        <li>I only use VSCode to view JSON.</li>
+        <li>I like lifting weights and riding my bike in the city.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>{{ currentYear }} Patrick Feeney</p>
+  </footer>
+</template>
